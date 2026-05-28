@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Alexis Oakes — REALTOR® | Coldwell Banker Select, Tulsa</title>
+<meta name="description" content="Alexis Oakes, REALTOR® with Coldwell Banker Select — Rookie of the Year 2025 and a Tulsa Top 500 Realtor guiding buyers and sellers home across Tulsa and surrounding communities." />
+<meta name="theme-color" content="#0d0c0b" />
+<link rel="canonical" href="https://aoakes.cbtulsa.com/" />
+<meta property="og:title" content="Alexis Oakes — REALTOR® | Coldwell Banker Select" />
+<meta property="og:description" content="Rookie of the Year 2025 · Tulsa Top 500 Realtor. Guiding you home across Tulsa and surrounding communities." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/img/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="assets/img/og-image.jpg" />
+<link rel="icon" href="assets/logos/ao-monogram-ink.svg" />
+<link rel="apple-touch-icon" href="assets/logos/ao-monogram-ink.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"Mostra Nuova";src:url("assets/fonts/MostraNuova-Thin.woff2") format("woff2");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Mostra Nuova";src:url("assets/fonts/MostraNuova-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+
+:root{
+  --black:#0d0c0b;
+  --ink:#15130f;
+  --ink-2:#211d17;
+  --cream:#f3ecdf;
+  --cream-2:#e9dfcd;
+  --tan:#e5ddd0;          /* light accent — for use on DARK backgrounds */
+  --tan-soft:#f0eadf;     /* lighter hover */
+  --tan-deep:#a8824a;     /* readable accent — for use on LIGHT/cream backgrounds */
+  --on-dark:#f3ecdf;
+  --on-dark-mute:rgba(243,236,223,.6);
+  --on-light:#1b1813;
+  --on-light-mute:#5e564a;
+  --line-d:rgba(243,236,223,.14);
+  --line-l:rgba(27,24,19,.14);
+  --display:"Mostra Nuova",serif;
+  --body:"Hanken Grotesk",system-ui,sans-serif;
+  --maxw:1320px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--body);background:var(--black);color:var(--on-dark);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden;height:100vh;height:100svh}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--tan);color:var(--black)}
+
+.grain{position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:.045;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 7vw}
+@media(min-width:900px){.wrap{padding:0 64px}}
+
+/* type */
+.eyebrow{font-family:var(--display);font-weight:700;font-size:.72rem;letter-spacing:.4em;text-transform:uppercase;color:var(--tan);display:inline-flex;align-items:center;gap:.85em}
+.eyebrow::before{content:"";width:7px;height:7px;background:var(--tan);transform:rotate(45deg);flex:none}
+.kicker{font-family:var(--display);font-weight:300;text-transform:lowercase;letter-spacing:.01em;color:var(--tan);font-size:clamp(1.5rem,3.4vw,2.4rem);line-height:1;display:block}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;letter-spacing:-.005em}
+.h-display{font-size:clamp(3rem,10vw,8rem);font-weight:300;letter-spacing:.01em;line-height:.94}
+.h-xl{font-size:clamp(2rem,5.4vw,4rem);font-weight:300}
+.h-lg{font-size:clamp(1.8rem,4.2vw,3.1rem);font-weight:300}
+
+/* ===== LOADER (monogram only — draw-on + sheen, fast, iOS-safe) ===== */
+#loader{position:fixed;inset:0;z-index:9999;background:var(--black);display:flex;align-items:center;justify-content:center;transition:opacity .55s ease,transform .7s var(--ease)}
+#loader .lwrap{position:relative;width:min(132px,30vw)}
+#loader .lmono{width:100%;height:auto;overflow:visible;display:block}
+#loader .lmono .draw{fill:none;stroke:var(--tan);stroke-width:.6;stroke-dasharray:1;stroke-dashoffset:1;animation:drawMono 1s var(--ease) .1s forwards}
+#loader .lmono .fillmono{fill:var(--tan);opacity:0;animation:fillMono .6s ease .85s forwards}
+@keyframes drawMono{to{stroke-dashoffset:0}}
+@keyframes fillMono{to{opacity:1}}
+#loader .sheen{position:absolute;inset:-10% -30%;background:linear-gradient(105deg,transparent 38%,rgba(255,255,255,.55) 50%,transparent 62%);mix-blend-mode:screen;transform:translateX(-120%);opacity:0;animation:sheen .8s ease 1.0s forwards;pointer-events:none}
+@keyframes sheen{0%{transform:translateX(-120%);opacity:0}25%{opacity:1}100%{transform:translateX(120%);opacity:0}}
+body.loaded #loader{opacity:0;transform:scale(1.04);pointer-events:none}
+body.skip-loader #loader{display:none}
+
+/* ===== scroll progress ===== */
+#progress{position:fixed;top:0;left:0;height:2px;width:100%;transform:scaleX(0);transform-origin:left;background:var(--tan);z-index:950}
+
+/* ===== NAV ===== */
+header{position:fixed;top:0;left:0;width:100%;z-index:900;padding:24px 0;transition:transform .5s var(--ease),background .5s var(--ease),padding .4s var(--ease);padding-top:max(24px,env(safe-area-inset-top))}
+header.solid{background:rgba(13,12,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:14px 0;border-bottom:1px solid var(--line-d)}
+header.hide{transform:translateY(-105%)}
+header .bar{display:flex;align-items:center;justify-content:space-between;max-width:var(--maxw);margin:0 auto;padding:0 7vw}
+@media(min-width:900px){header .bar{padding:0 64px}}
+.brandlogo{height:30px;width:auto}
+nav.links{display:none;gap:36px;align-items:center}
+@media(min-width:980px){nav.links{display:flex}}
+nav.links a{font-family:var(--display);font-weight:700;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--on-dark);position:relative;padding:4px 0}
+nav.links a::after{content:"";position:absolute;left:0;bottom:-2px;height:1px;width:0;background:var(--tan);transition:width .4s var(--ease)}
+nav.links a:hover{color:var(--tan)}
+nav.links a:hover::after{width:100%}
+.navcta{font-family:var(--display);font-weight:700;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--tan);color:var(--tan);padding:11px 20px;border-radius:2px;transition:all .35s var(--ease)}
+.navcta:hover{background:var(--tan);color:var(--black)}
+.burger{display:flex;flex-direction:column;gap:5px;cursor:pointer;background:none;border:0;padding:6px;z-index:885}
+@media(min-width:980px){.burger{display:none}}
+.burger span{width:26px;height:1.5px;background:var(--on-dark);transition:.35s var(--ease)}
+body.menu-open .burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg);background:var(--tan)}
+body.menu-open .burger span:nth-child(2){opacity:0}
+body.menu-open .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);background:var(--tan)}
+.mobilemenu{position:fixed;inset:0;z-index:880;background:var(--black);transform:translateY(-100%);transition:transform .6s var(--ease);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px}
+body.menu-open .mobilemenu{transform:none}
+.mobilemenu a{font-family:var(--display);font-weight:300;font-size:2.1rem;color:var(--on-dark);padding:8px}
+.mobilemenu a .num{font-size:.7rem;color:var(--tan);font-weight:700;letter-spacing:.2em;vertical-align:super;margin-right:10px}
+.mobilemenu .mc{margin-top:30px;font-size:.95rem;color:var(--on-dark-mute);text-align:center;line-height:2}
+
+/* ===== reveal / motion ===== */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}.d5{transition-delay:.4s}
+.lineMask{display:block;overflow:hidden}
+.lineMask>span{display:block;transform:translateY(110%);transition:transform 1s var(--ease)}
+.in .lineMask>span,.lineMask.in>span{transform:none}
+.imgwipe{position:relative;overflow:hidden}
+.imgwipe::after{content:"";position:absolute;inset:0;background:var(--tan);transform-origin:right;transform:scaleX(1);transition:transform 1s var(--ease)}
+.imgwipe.in::after{transform:scaleX(0)}
+.imgwipe img{transform:scale(1.12);transition:transform 1.4s var(--ease)}
+.imgwipe.in img{transform:scale(1)}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .reveal,.lineMask>span,.imgwipe img{opacity:1!important;transform:none!important}
+  .imgwipe::after{transform:scaleX(0)!important}
+  #loader{display:none!important}
+}
+
+/* ===== HERO (full-bleed image + overlay) ===== */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 90px;background:var(--black);overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 26%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(100deg,rgba(8,7,6,.94) 0%,rgba(8,7,6,.8) 34%,rgba(8,7,6,.5) 60%,rgba(8,7,6,.2) 100%),
+  linear-gradient(0deg,rgba(8,7,6,.85) 0%,rgba(8,7,6,.2) 32%,transparent 55%)}
+@media(max-width:760px){.hero-bg img{object-position:center 22%}.hero-bg::after{background:linear-gradient(180deg,rgba(8,7,6,.8) 0%,rgba(8,7,6,.5) 38%,rgba(8,7,6,.66) 66%,rgba(8,7,6,.94) 100%)}}
+.hero-inner{position:relative;z-index:2;width:100%}
+.hero-copy{max-width:680px}
+.hero-copy .eyebrow{margin-bottom:22px}
+.hero-copy h1{margin:0 0 12px;text-shadow:0 2px 30px rgba(0,0,0,.5)}
+.hero-kicker{margin:0 0 6px}
+.hero-sub{max-width:42ch;color:var(--on-dark);opacity:.86;font-size:1.06rem;margin:22px 0 34px;text-shadow:0 1px 16px rgba(0,0,0,.6)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.btn{font-family:var(--display);font-weight:700;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;padding:15px 28px;border-radius:2px;transition:all .4s var(--ease);display:inline-flex;align-items:center;gap:.7em;border:1px solid transparent;cursor:pointer}
+.btn-fill{background:var(--tan);color:var(--black)}
+.btn-fill:hover{background:var(--tan-soft)}
+.btn-line{border-color:var(--on-dark);color:var(--on-dark)}
+.btn-line:hover{background:var(--on-dark);color:var(--black)}
+.btn .dia{width:6px;height:6px;background:currentColor;transform:rotate(45deg)}
+.hero-stat{display:inline-flex;align-items:center;gap:12px;margin-top:34px;padding-top:22px;border-top:1px solid var(--line-d)}
+.hero-stat .k{font-family:var(--display);font-weight:300;font-size:2rem;line-height:1;color:var(--tan)}
+.hero-stat .v{font-family:var(--display);font-weight:700;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--on-dark-mute);max-width:14ch}
+.scrollcue{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px}
+.scrollcue span{font-family:var(--display);font-weight:700;font-size:.55rem;letter-spacing:.4em;text-transform:uppercase;color:var(--on-dark-mute)}
+.scrollcue .ln{width:1px;height:40px;background:linear-gradient(var(--on-dark-mute),transparent);animation:cue 2s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(.3);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}50.1%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(.3);transform-origin:bottom}}
+
+/* ===== MARQUEE ===== */
+.marquee{background:var(--tan);color:var(--black);padding:16px 0;overflow:hidden;white-space:nowrap;border-top:1px solid rgba(0,0,0,.15);border-bottom:1px solid rgba(0,0,0,.15)}
+.marquee .track{display:inline-flex;align-items:center;animation:scrollx 38s linear infinite;will-change:transform}
+.marquee.rev .track{animation-direction:reverse;animation-duration:46s}
+.marquee .track span{font-family:var(--display);font-weight:700;font-size:.92rem;letter-spacing:.28em;text-transform:uppercase;padding:0 22px;display:inline-flex;align-items:center;gap:22px}
+.marquee .track span::after{content:"";width:6px;height:6px;background:var(--black);transform:rotate(45deg);display:inline-block}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+
+/* sections */
+.sec-head{display:flex;flex-direction:column;gap:14px;margin-bottom:52px}
+.sec-head .top{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.sec-head h2{flex:1;min-width:280px}
+
+/* ===== STATS ===== */
+.stats{background:var(--black);padding:clamp(70px,10vw,120px) 0;position:relative;overflow:hidden;border-top:1px solid var(--line-d)}
+.stats .wm{position:absolute;right:-3%;top:50%;transform:translateY(-50%);width:min(420px,60vw);opacity:.05}
+.stats .head{max-width:600px;margin-bottom:56px;position:relative;z-index:2}
+.statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-d);position:relative;z-index:2}
+@media(min-width:860px){.statgrid{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--black);padding:34px 26px}
+.stat .n{font-family:var(--display);font-weight:300;font-size:clamp(2.4rem,5vw,3.6rem);line-height:1;color:var(--tan)}
+.stat .l{font-size:.8rem;color:var(--on-dark-mute);margin-top:12px;line-height:1.4}
+.stats .foot{margin-top:46px;font-size:.85rem;color:var(--on-dark-mute);position:relative;z-index:2}
+
+/* ===== ABOUT (light) ===== */
+.about{padding:clamp(80px,12vw,150px) 0;background:var(--cream);color:var(--on-light)}
+.about-grid{display:grid;grid-template-columns:1fr;gap:50px;align-items:center}
+@media(min-width:980px){.about-grid{grid-template-columns:.9fr 1.1fr;gap:80px}}
+.about-photo{position:relative}
+.about-photo .fr{border-radius:3px;aspect-ratio:4/5;box-shadow:0 40px 80px -40px rgba(27,24,19,.4)}
+.about-photo .fr img{width:100%;height:115%;object-fit:cover;object-position:center 18%}
+.about-photo .badge{position:absolute;right:-16px;top:30px;background:var(--black);color:var(--tan);padding:18px 16px;border-radius:2px;writing-mode:vertical-rl;font-family:var(--display);font-weight:700;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase}
+.about-copy .kicker{margin-bottom:12px;color:var(--tan-deep);font-weight:700;letter-spacing:.04em}
+.about-copy h2{margin-bottom:24px;font-weight:700;color:var(--on-light)}
+.about-copy p{color:var(--on-light-mute);margin-bottom:16px;max-width:54ch}
+.about-copy p.lead{font-size:1.1rem;color:var(--on-light)}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.cred{font-family:var(--display);font-weight:700;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--line-l);padding:9px 14px;border-radius:2px;color:var(--on-light);display:flex;align-items:center;gap:.6em}
+.cred .dia{width:5px;height:5px;background:var(--tan-deep);transform:rotate(45deg)}
+
+/* ===== AWARDS ===== */
+.awards{background:var(--ink);padding:clamp(60px,9vw,100px) 0;border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d)}
+.awgrid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line-d)}
+@media(min-width:560px){.awgrid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:920px){.awgrid{grid-template-columns:repeat(4,1fr)}}
+.aw{background:var(--ink);padding:38px 22px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.aw .y{font-family:var(--display);font-weight:300;font-size:clamp(2.1rem,4.6vw,2.8rem);color:var(--tan);line-height:1;white-space:nowrap;letter-spacing:.02em}
+.aw .t{font-family:var(--display);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-top:18px;color:var(--on-dark);min-height:2.2em;display:flex;align-items:center}
+.aw .s{font-size:.78rem;color:var(--on-dark-mute);margin-top:6px}
+
+/* ===== LISTINGS ===== */
+.listings{padding:clamp(80px,12vw,140px) 0;background:var(--black)}
+.listgrid{display:grid;grid-template-columns:1fr;gap:30px}
+@media(min-width:680px){.listgrid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.listgrid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--ink);border:1px solid var(--line-d);border-radius:3px;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease);display:flex;flex-direction:column}
+.card:hover{transform:translateY(-7px);box-shadow:0 40px 70px -40px rgba(0,0,0,.8)}
+.card .ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--ink-2)}
+.card .ph img.cover{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease),opacity .3s}
+.card:hover .ph img.cover{transform:scale(1.07)}
+.card .ph img.cover.failed{opacity:0}
+.card .ph-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:0}
+.card .ph-fallback img{width:44%;opacity:.18}
+.card .price{position:absolute;left:0;bottom:0;z-index:3;background:var(--black);color:var(--tan);font-family:var(--display);font-weight:300;font-size:1.3rem;letter-spacing:.02em;padding:9px 16px;border-top-right-radius:3px}
+.card .status{position:absolute;right:12px;top:12px;z-index:3;font-family:var(--display);font-weight:700;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;padding:6px 11px;border-radius:2px;border:1px solid transparent}
+.card .status.active{background:var(--tan);color:var(--black)}
+.card .status.pending{background:rgba(13,12,11,.72);color:var(--tan);border-color:var(--tan);backdrop-filter:blur(4px)}
+.card .status.contract{background:rgba(13,12,11,.72);color:var(--tan-soft);border-color:var(--tan-soft);backdrop-filter:blur(4px)}
+.card .status.soon{background:var(--tan-soft);color:var(--black)}
+.card .body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.card .addr{font-family:var(--display);font-weight:300;font-size:1.26rem;line-height:1.12;color:var(--on-dark)}
+.card .city{font-size:.86rem;color:var(--on-dark-mute);margin-top:6px}
+.card .specs{display:flex;gap:18px;margin-top:18px;padding-top:18px;border-top:1px solid var(--line-d);font-family:var(--display);font-weight:700;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark-mute)}
+.card .specs b{font-weight:300;font-size:1.05rem;display:block;color:var(--on-dark);letter-spacing:0;margin-bottom:2px}
+.card .go{margin-top:auto;padding-top:20px}
+.card .go a{font-family:var(--display);font-weight:700;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--tan);display:inline-flex;align-items:center;gap:.7em}
+.card .go a .arr{transition:transform .4s var(--ease)}
+.card:hover .go a .arr{transform:translateX(5px)}
+.list-note{margin-top:34px;text-align:center;font-size:.82rem;color:var(--on-dark-mute)}
+.skeleton .ph{background:linear-gradient(100deg,var(--ink-2) 30%,#2a261e 50%,var(--ink-2) 70%);background-size:200% 100%;animation:shim 1.4s infinite}
+.skeleton .sln{height:13px;border-radius:3px;background:var(--ink-2);margin:10px 0;background-size:200% 100%;animation:shim 1.4s infinite}
+@keyframes shim{to{background-position:-200% 0}}
+
+/* ===== TESTIMONIALS (light) ===== */
+.testi{padding:clamp(80px,12vw,140px) 0;background:var(--cream-2);color:var(--on-light)}
+.testi .kicker{color:var(--tan-deep);font-weight:700;letter-spacing:.04em}
+.testi h2{font-weight:700;color:var(--on-light)}
+.testi-feat{border-left:2px solid var(--tan-deep);padding:6px 0 6px 34px;margin-bottom:56px;max-width:60ch}
+.testi-feat .q{font-family:var(--display);font-weight:300;font-size:clamp(1.5rem,3.2vw,2.3rem);line-height:1.3}
+.testi-feat .by{font-family:var(--display);font-weight:700;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--tan-deep);margin-top:22px}
+.stars{display:inline-flex;gap:6px;margin-bottom:18px}
+.stars i{width:8px;height:8px;background:var(--tan-deep);transform:rotate(45deg);display:block}
+.tgrid{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:680px){.tgrid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.tgrid{grid-template-columns:repeat(4,1fr)}}
+.tcard{background:var(--cream);border:1px solid var(--line-l);border-radius:3px;padding:26px;display:flex;flex-direction:column}
+.tcard .q{font-size:.96rem;color:var(--on-light);flex:1;line-height:1.6}
+.tcard .by{font-family:var(--display);font-weight:700;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--tan-deep);margin-top:20px}
+.tcard .dt{font-size:.72rem;color:var(--on-light-mute);margin-top:4px}
+
+/* ===== PROCESS (light) ===== */
+.process{padding:clamp(80px,12vw,140px) 0;background:var(--cream);color:var(--on-light)}
+.process .kicker{color:var(--tan-deep);font-weight:700;letter-spacing:.04em}
+.process h2{font-weight:700;color:var(--on-light)}
+.proc-tabs{display:inline-flex;border:1px solid var(--line-l);border-radius:3px;overflow:hidden;margin-bottom:46px}
+.proc-tabs button{font-family:var(--display);font-weight:700;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;padding:13px 30px;background:transparent;border:0;cursor:pointer;color:var(--on-light-mute);transition:all .4s var(--ease)}
+.proc-tabs button.active{background:var(--black);color:var(--cream)}
+.proc-track{display:none}
+.proc-track.active{display:block}
+.steps{display:grid;grid-template-columns:1fr}
+@media(min-width:760px){.steps{grid-template-columns:1fr 1fr}}
+@media(min-width:1080px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{padding:30px 28px;border-top:1px solid var(--line-l);transition:background .4s}
+.step:hover{background:var(--cream-2)}
+.step .n{font-family:var(--display);font-weight:300;font-size:2.6rem;color:var(--tan-deep);line-height:1}
+.step h3{font-family:var(--display);font-weight:700;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;margin:14px 0 10px}
+.step p{font-size:.92rem;color:var(--on-light-mute);max-width:34ch}
+
+/* ===== GUIDES ===== */
+.guides{padding:clamp(80px,12vw,140px) 0;background:var(--black)}
+.guides .intro{max-width:48ch;color:var(--on-dark-mute);margin-bottom:48px;font-size:1.02rem}
+.gugrid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line-d);border:1px solid var(--line-d)}
+@media(min-width:640px){.gugrid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.gugrid{grid-template-columns:repeat(3,1fr)}}
+.guide{background:var(--black);padding:30px 28px;display:flex;flex-direction:column;gap:12px;transition:background .45s var(--ease)}
+.guide:hover{background:var(--ink)}
+.guide .tagline{font-family:var(--display);font-weight:700;font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;color:var(--tan)}
+.guide h3{font-family:var(--display);font-weight:300;font-size:1.5rem;color:var(--on-dark);line-height:1.1}
+.guide p{font-size:.88rem;color:var(--on-dark-mute);flex:1}
+.guide .dl{font-family:var(--display);font-weight:700;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark);display:inline-flex;align-items:center;gap:.7em;margin-top:6px}
+.guide .dl .arr{transition:transform .4s var(--ease)}
+.guide:hover .dl .arr{transform:translate(3px,3px)}
+
+/* ===== CONTACT ===== */
+.contact{position:relative;overflow:hidden;color:var(--on-dark)}
+.contact .bg{position:absolute;inset:0;z-index:0}
+.contact .bg img{width:100%;height:120%;object-fit:cover;object-position:75% 28%}
+.contact .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,7,6,.96) 0%,rgba(8,7,6,.88) 42%,rgba(8,7,6,.6) 72%,rgba(8,7,6,.35) 100%)}
+@media(max-width:760px){.contact .bg::after{background:linear-gradient(180deg,rgba(8,7,6,.9) 0%,rgba(8,7,6,.7) 45%,rgba(8,7,6,.82) 100%)}}
+.contact .inner{position:relative;z-index:2;padding-block:clamp(90px,14vw,170px);display:grid;grid-template-columns:1fr;gap:40px}
+@media(min-width:900px){.contact .inner{grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}}
+.contact .kicker{margin-bottom:8px;text-shadow:0 1px 14px rgba(0,0,0,.5)}
+.contact h2{margin-bottom:22px;text-shadow:0 2px 24px rgba(0,0,0,.5)}
+.contact .lead{color:var(--on-dark);opacity:.86;max-width:46ch;font-size:1.08rem;margin-bottom:32px;text-shadow:0 1px 14px rgba(0,0,0,.5)}
+.cinfo{display:flex;flex-direction:column;gap:2px}
+.cinfo a,.cinfo div{font-family:var(--display);font-weight:300;font-size:clamp(1.3rem,3vw,1.9rem);color:var(--on-dark);padding:6px 0}
+.cinfo a:hover{color:var(--tan)}
+.cinfo .lbl{font-family:var(--display);font-weight:700;font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--tan);padding-bottom:2px}
+.ccard{background:rgba(243,236,223,.05);border:1px solid var(--line-d);border-radius:4px;padding:34px}
+.ccard h3{font-family:var(--display);font-weight:700;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--tan);margin-bottom:20px}
+.field{margin-bottom:16px}
+.field label{font-family:var(--display);font-weight:700;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute);display:block;margin-bottom:7px}
+.field input,.field textarea{width:100%;background:rgba(243,236,223,.06);border:1px solid var(--line-d);border-radius:2px;padding:12px 14px;color:var(--on-dark);font-family:var(--body);font-size:.95rem}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--tan)}
+.ccard .btn{width:100%;justify-content:center;background:var(--tan);color:var(--black);margin-top:6px}
+.ccard .btn:hover{background:var(--tan-soft)}
+.ccard .btn[disabled]{opacity:.6;cursor:default}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-msg{margin-top:16px;font-size:.92rem;line-height:1.5;color:var(--on-dark);display:none}
+.form-msg.show{display:block}
+.form-msg.ok{color:var(--tan)}
+.form-msg a{color:var(--tan);border-bottom:1px solid var(--tan)}
+
+/* ===== FOOTER ===== */
+footer{background:#080706;color:var(--on-dark-mute);padding:70px 0 40px}
+.f-top{display:grid;grid-template-columns:1fr;gap:46px;padding-bottom:46px;border-bottom:1px solid var(--line-d)}
+@media(min-width:820px){.f-top{grid-template-columns:1.4fr 1fr 1fr}}
+.f-brand .aolog{height:88px;width:auto;margin-bottom:22px}
+.f-brand p{font-size:.9rem;max-width:34ch}
+.f-col h4{font-family:var(--display);font-weight:700;font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--tan);margin-bottom:18px}
+.f-col a,.f-col span{display:block;font-size:.92rem;padding:5px 0;color:var(--on-dark-mute)}
+.f-col a:hover{color:var(--tan)}
+.f-bottom{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center;padding-top:34px}
+.f-bottom .cblogo{height:30px;width:auto;opacity:.85}
+.f-social{display:flex;gap:12px;margin-top:18px}
+.f-social a{width:38px;height:38px;border:1px solid var(--line-d);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--on-dark-mute);transition:all .35s var(--ease)}
+.f-social a:hover{border-color:var(--tan);color:var(--tan);transform:translateY(-2px)}
+.f-social svg{width:17px;height:17px}
+.legal{font-size:.72rem;color:rgba(243,236,223,.4);line-height:1.7;max-width:60ch}
+.legal .eho{display:inline-flex;align-items:center;gap:7px;margin-top:8px;color:rgba(243,236,223,.55)}
+.legal .eho svg{width:15px;height:15px;flex:none}
+.kraft{display:flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(243,236,223,.28)}
+.kraft:hover{color:rgba(243,236,223,.6)}
+.kraft .dia{width:5px;height:5px;background:currentColor;transform:rotate(45deg)}
+</style>
+<noscript><style>.reveal,.lineMask>span,.imgwipe img{opacity:1!important;transform:none!important}.imgwipe::after{transform:scaleX(0)!important}#loader{display:none!important}body.lock{overflow:auto!important;height:auto!important}</style></noscript>
+</head>
+<body class="lock">
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="lwrap">
+    <svg class="lmono" viewBox="0 0 111.26 58.36" aria-label="Alexis Oakes">
+      <path class="draw" pathLength="1" d="M92.02,1.46c-19.42-5.61-38.25,5.38-38.25,26.33h-9.33v-14.22c0-4.73-5.92-10.22-10.13-11.78C24.84-1.7,12.98.17,4.78,5.88v11.65c1.77-.37,1.91-3.99,2.71-5.9C11.35,2.49,22.29-1.23,30.86,3.81c2.43,1.44,6.12,6.04,6.12,8.82v15.15H15.75c-5.63,0-13.17,5.32-14.92,10.73-4.83,14.9,12.46,21.77,24.5,19.36,4.62-.92,8.61-3.29,11.63-6.78l.02,6.31c1.19,0,10.59.06,12.52.06.84,0,.99-.31.99-1.25-2.55,0-6.06-.93-6.06-3.95v-23.08h9.33c0,22.22,21.31,34.67,41.06,26.8,22.92-9.17,21.75-47.46-2.8-54.53ZM36.98,48.53c-8.45,13.13-31.45,10.42-29.35-7.87.64-5.53,6.12-11.47,11.84-11.47h17.51v19.34ZM97.39,49.7c-9.25,11-25.92,8.76-32.66-3.72-2.82-5.22-3.35-11-3.97-16.79h15.63c.48,0,.96.1,1.38.33,1.87,1.04,3.33,2.41,4.1,4.72h.76c.93-2.42,2.86-4.34,5.28-5.28v-.74c-2.42-.95-4.34-2.86-5.28-5.3h-.76c-.74,2.52-2.1,3.52-3.83,4.57-.34.21-.75.3-1.15.3h-16.19c-.06-1.5.16-2.71.27-3.91,1.29-12.72,9.99-23.55,23.76-22.12,20.7,2.12,23.94,34.57,12.66,47.95Z"/>
+      <path class="fillmono" d="M92.02,1.46c-19.42-5.61-38.25,5.38-38.25,26.33h-9.33v-14.22c0-4.73-5.92-10.22-10.13-11.78C24.84-1.7,12.98.17,4.78,5.88v11.65c1.77-.37,1.91-3.99,2.71-5.9C11.35,2.49,22.29-1.23,30.86,3.81c2.43,1.44,6.12,6.04,6.12,8.82v15.15H15.75c-5.63,0-13.17,5.32-14.92,10.73-4.83,14.9,12.46,21.77,24.5,19.36,4.62-.92,8.61-3.29,11.63-6.78l.02,6.31c1.19,0,10.59.06,12.52.06.84,0,.99-.31.99-1.25-2.55,0-6.06-.93-6.06-3.95v-23.08h9.33c0,22.22,21.31,34.67,41.06,26.8,22.92-9.17,21.75-47.46-2.8-54.53ZM36.98,48.53c-8.45,13.13-31.45,10.42-29.35-7.87.64-5.53,6.12-11.47,11.84-11.47h17.51v19.34ZM97.39,49.7c-9.25,11-25.92,8.76-32.66-3.72-2.82-5.22-3.35-11-3.97-16.79h15.63c.48,0,.96.1,1.38.33,1.87,1.04,3.33,2.41,4.1,4.72h.76c.93-2.42,2.86-4.34,5.28-5.28v-.74c-2.42-.95-4.34-2.86-5.28-5.3h-.76c-.74,2.52-2.1,3.52-3.83,4.57-.34.21-.75.3-1.15.3h-16.19c-.06-1.5.16-2.71.27-3.91,1.29-12.72,9.99-23.55,23.76-22.12,20.7,2.12,23.94,34.57,12.66,47.95Z"/>
+    </svg>
+    <div class="sheen"></div>
+  </div>
+</div>
+
+<div id="progress" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header id="header">
+  <div class="bar">
+    <a href="#top" aria-label="Alexis Oakes home"><img class="brandlogo" src="assets/logos/ao-horizontal-white.svg" alt="Alexis Oakes" /></a>
+    <nav class="links" aria-label="Primary">
+      <a href="#listings">Listings</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#process">Process</a>
+      <a href="#guides">Guides</a>
+    </nav>
+    <a href="#contact" class="navcta" data-mag>Let's Talk</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobilemenu" id="mobilemenu">
+  <a href="#listings"><span class="num">01</span>Listings</a>
+  <a href="#about"><span class="num">02</span>About</a>
+  <a href="#testimonials"><span class="num">03</span>Reviews</a>
+  <a href="#process"><span class="num">04</span>Process</a>
+  <a href="#guides"><span class="num">05</span>Guides</a>
+  <a href="#contact"><span class="num">06</span>Contact</a>
+  <div class="mc">(918) 859-9603<br>aoakes@cbtulsa.com</div>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"><img src="assets/img/alexis-hero-1800.jpg"
+       srcset="assets/img/alexis-hero-1100.jpg 1100w, assets/img/alexis-hero-1800.jpg 1800w"
+       sizes="100vw" alt="Alexis Oakes, REALTOR with Coldwell Banker Select" fetchpriority="high" /></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow reveal">Rookie of the Year 2025 &middot; Tulsa Top 500</span>
+      <h1 class="h-display">
+        <span class="lineMask"><span>ALEXIS</span></span>
+        <span class="lineMask"><span>OAKES</span></span>
+      </h1>
+      <span class="kicker hero-kicker reveal d1">your next chapter</span>
+      <p class="hero-sub reveal d2">A Tulsa native, certified interior decorator, and REALTOR&reg; with Coldwell Banker&reg; Select &mdash; guiding buyers and sellers home across Tulsa and every community around it.</p>
+      <div class="hero-cta reveal d3">
+        <a href="#listings" class="btn btn-fill" data-mag><span class="dia"></span>View Listings</a>
+        <a href="#contact" class="btn btn-line">Start a Conversation</a>
+      </div>
+      <div class="hero-stat reveal d4"><span class="k">$11M+</span><span class="v">2025 Sales Volume</span></div>
+    </div>
+  </div>
+  <div class="scrollcue"><span>Scroll</span><div class="ln"></div></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Tulsa</span><span>Broken Arrow</span><span>Jenks</span><span>Bixby</span><span>Owasso</span><span>Sand Springs</span><span>Coweta</span><span>Sapulpa</span><span>Claremore</span>
+    <span>Tulsa</span><span>Broken Arrow</span><span>Jenks</span><span>Bixby</span><span>Owasso</span><span>Sand Springs</span><span>Coweta</span><span>Sapulpa</span><span>Claremore</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="stats">
+  <img class="wm" src="assets/logos/ao-monogram-white.svg" alt="" aria-hidden="true" />
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">2025, By The Numbers</span>
+      <h2 class="h-lg" style="margin-top:18px;color:var(--on-dark)">Trusted by Tulsa families &mdash; closing after closing.</h2>
+    </div>
+    <div class="statgrid">
+      <div class="stat reveal"><div class="n" data-count="37" data-suffix="+">0</div><div class="l">Families &amp; individuals helped in 2025 &mdash; and counting</div></div>
+      <div class="stat reveal d1"><div class="n" data-prefix="$" data-count="11" data-suffix="M+">0</div><div class="l">In sales volume represented this year</div></div>
+      <div class="stat reveal d2"><div class="n" data-count="10" data-suffix="%">0</div><div class="l">Ranked in the Top 10% of Realtors nationwide</div></div>
+      <div class="stat reveal d3"><div class="n" data-count="3" data-suffix="%">0</div><div class="l">Ranked in the Top 3% of Realtors locally</div></div>
+    </div>
+    <p class="foot reveal">Recognized as a Tulsa Top 500 Realtor&reg; &mdash; serving Tulsa and all surrounding communities.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo reveal">
+      <div class="fr imgwipe"><img id="aboutImg" data-parallax="0.12" src="assets/img/alexis-bio-1100.jpg"
+        srcset="assets/img/alexis-bio-700.jpg 700w, assets/img/alexis-bio-1100.jpg 1100w, assets/img/alexis-bio-1800.jpg 1800w"
+        sizes="(max-width:980px) 90vw, 480px" alt="Alexis Oakes" /></div>
+      <div class="badge">Coldwell Banker Select</div>
+    </div>
+    <div class="about-copy">
+      <span class="kicker reveal">my story</span>
+      <h2 class="h-xl reveal d1">People are the heart of what I do &mdash; the homes are just the perk.</h2>
+      <p class="lead reveal d2">As a Tulsa native, I&rsquo;m deeply connected to this community and the people who make it special. In 2025 I&rsquo;ve been honored to help 37 &mdash; and counting &mdash; families and individuals buy or sell their homes.</p>
+      <p class="reveal d2">Whether I&rsquo;m helping a family transform their space to sell or guiding buyers as they imagine their life in a new home, my goal is always to make the process personal, meaningful, and rooted in care.</p>
+      <p class="reveal d3">Every closing represents someone&rsquo;s new beginning &mdash; and that&rsquo;s what fuels me every single day. If you&rsquo;re ready for your next chapter, I&rsquo;d love to help you find the perfect space to start it.</p>
+      <div class="creds reveal d3">
+        <span class="cred"><span class="dia"></span>Certified Interior Decorator</span>
+        <span class="cred"><span class="dia"></span>OSU B.S. Design, Housing &amp; Merchandising</span>
+        <span class="cred"><span class="dia"></span>Tulsa Native</span>
+        <span class="cred"><span class="dia"></span>Plant Enthusiast</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="awards">
+  <div class="wrap">
+    <div class="awgrid">
+      <div class="aw reveal"><div class="y">2025</div><div class="t">Rookie of the Year</div><div class="s">Coldwell Banker Select</div></div>
+      <div class="aw reveal d1"><div class="y">Top 500</div><div class="t">Tulsa Top Realtor</div><div class="s">Greater Tulsa market</div></div>
+      <div class="aw reveal d2"><div class="y">Top 10%</div><div class="t">Nationwide</div><div class="s">Of Realtors across the U.S.</div></div>
+      <div class="aw reveal d3"><div class="y">Top 3%</div><div class="t">Locally</div><div class="s">Of Realtors in the Tulsa area</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LISTINGS -->
+<section class="listings" id="listings">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">on the market</span>
+      <div class="top"><h2 class="h-lg" style="color:var(--on-dark)">Current Listings</h2><span class="eyebrow">Updated from the MLS</span></div>
+    </div>
+    <div class="listgrid" id="listgrid" aria-live="polite"></div>
+    <p class="list-note" id="listNote"></p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi" id="testimonials">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">kind words</span>
+      <div class="top"><h2 class="h-lg">What clients are saying.</h2></div>
+    </div>
+    <div class="testi-feat reveal">
+      <div class="stars"><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="q">&ldquo;If you&rsquo;re looking for a realtor who is honest, caring, communicative, accessible, knowledgeable and most of all passionate about serving her clients, then Alexis is who you want. She walked us through the entire process with the utmost integrity and sold our home for the asking price. Initially she will be your realtor&hellip; by the end, she will feel like family.&rdquo;</p>
+      <div class="by">Jeff &amp; Dana C.</div>
+    </div>
+    <div class="tgrid">
+      <div class="tcard reveal"><div class="stars"><i></i><i></i><i></i><i></i><i></i></div><p class="q">&ldquo;Alexis is AMAZING! She made the home-buying process very easy.&rdquo;</p><div class="by">Brittany G.</div><div class="dt">Oct 2025</div></div>
+      <div class="tcard reveal d1"><div class="stars"><i></i><i></i><i></i><i></i><i></i></div><p class="q">&ldquo;We are not easy to please, but we are so thankful for and impressed by Alexis. Friendly, informative, and supportive &mdash; we&rsquo;re telling everyone about her!&rdquo;</p><div class="by">Justin H.</div><div class="dt">Jun 2025</div></div>
+      <div class="tcard reveal d2"><div class="stars"><i></i><i></i><i></i><i></i><i></i></div><p class="q">&ldquo;She efficiently sold my home and coordinated the closing of my new home on the same day. Her behind-the-scenes work made for a smooth, stress-free closing.&rdquo;</p><div class="by">Teresa P.</div><div class="dt">Mar 2025</div></div>
+      <div class="tcard reveal d3"><div class="stars"><i></i><i></i><i></i><i></i><i></i></div><p class="q">&ldquo;We&rsquo;ve bought and sold several houses. Alexis by far is the best realtor we&rsquo;ve used. She went above and beyond &mdash; highly recommend.&rdquo;</p><div class="by">Garth W.</div><div class="dt">Sep 2024</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">how I guide you home</span>
+      <div class="top"><h2 class="h-lg">A clear path, every step.</h2></div>
+    </div>
+    <div class="proc-tabs reveal" role="tablist">
+      <button class="active" data-track="buy" role="tab">Buying</button>
+      <button data-track="sell" role="tab">Selling</button>
+    </div>
+    <div class="proc-track active" data-track="buy">
+      <div class="steps">
+        <div class="step reveal"><div class="n">01</div><h3>Consultation</h3><p>We meet, and I get to know exactly what you&rsquo;re looking for.</p></div>
+        <div class="step reveal d1"><div class="n">02</div><h3>Get Pre-Qualified</h3><p>Get pre-approved by a lender. I can recommend phenomenal ones.</p></div>
+        <div class="step reveal d2"><div class="n">03</div><h3>Home Search</h3><p>I narrow down the right options for your review.</p></div>
+        <div class="step reveal"><div class="n">04</div><h3>Make an Offer</h3><p>We negotiate, get it accepted, and go under contract.</p></div>
+        <div class="step reveal d1"><div class="n">05</div><h3>Home Inspection</h3><p>Review results together and decide how to move forward.</p></div>
+        <div class="step reveal d2"><div class="n">06</div><h3>Appraisal &amp; Title</h3><p>Lender orders the appraisal, title search, and finalizes financing.</p></div>
+        <div class="step reveal"><div class="n">07</div><h3>Closing</h3><p>Sign the papers and pop the bubbly &mdash; you&rsquo;re a homeowner.</p></div>
+      </div>
+    </div>
+    <div class="proc-track" data-track="sell">
+      <div class="steps">
+        <div class="step reveal"><div class="n">01</div><h3>Meet With Me</h3><p>We discuss your needs, set a price, and sign listing paperwork.</p></div>
+        <div class="step reveal d1"><div class="n">02</div><h3>Seller Homework</h3><p>Clean, repair, declutter, and fill out the forms.</p></div>
+        <div class="step reveal d2"><div class="n">03</div><h3>Photography</h3><p>Photos, floorplan, drone aerials, and a video tour.</p></div>
+        <div class="step reveal"><div class="n">04</div><h3>Activate MLS</h3><p>Your listing syndicates to Coldwell Banker, Zillow, Realtor.com.</p></div>
+        <div class="step reveal d1"><div class="n">05</div><h3>Marketing &amp; Showings</h3><p>Signage, listing book, ShowingTime scheduling, SentriLock access.</p></div>
+        <div class="step reveal d2"><div class="n">06</div><h3>Advertising &amp; Events</h3><p>Social posts, open houses, broker&rsquo;s opens, agent outreach.</p></div>
+        <div class="step reveal"><div class="n">07</div><h3>Offers</h3><p>We review, negotiate, and choose the offer that fits your goals.</p></div>
+        <div class="step reveal d1"><div class="n">08</div><h3>Due Diligence</h3><p>Inspections, financing, appraisals, and repair negotiations.</p></div>
+        <div class="step reveal d2"><div class="n">09</div><h3>Title &amp; Closing</h3><p>Title work, pre-sign, buyer closing, and you receive proceeds.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDES -->
+<section class="guides" id="guides">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">resources for you</span>
+      <div class="top"><h2 class="h-lg" style="color:var(--on-dark)">Guides &amp; checklists</h2></div>
+    </div>
+    <p class="intro reveal">Honest, no-pressure resources I share with my clients &mdash; download any of them anytime.</p>
+    <div class="gugrid">
+      <a class="guide reveal" href="assets/guides/preparing-your-home-for-sale.pdf" target="_blank" rel="noopener"><span class="tagline">For Sellers</span><h3>Preparing Your Home for Sale</h3><p>Interior, exterior, safety, plumbing, and the documentation buyers look for.</p><span class="dl">Download PDF <span class="arr">&darr;</span></span></a>
+      <a class="guide reveal d1" href="assets/guides/preparing-for-showing.pdf" target="_blank" rel="noopener"><span class="tagline">For Sellers</span><h3>Preparing for a Showing</h3><p>A simple checklist to make every showing feel bright, tidy, and inviting.</p><span class="dl">Download PDF <span class="arr">&darr;</span></span></a>
+      <a class="guide reveal d2" href="assets/guides/seller-faq.pdf" target="_blank" rel="noopener"><span class="tagline">For Sellers</span><h3>Seller FAQ</h3><p>Pricing, staging, showings, open houses, and keeping your home secure.</p><span class="dl">Download PDF <span class="arr">&darr;</span></span></a>
+      <a class="guide reveal" href="assets/guides/what-to-expect-on-an-offer.pdf" target="_blank" rel="noopener"><span class="tagline">For Sellers</span><h3>What to Expect on an Offer</h3><p>Price, contingencies, earnest money, inclusions, and the full picture.</p><span class="dl">Download PDF <span class="arr">&darr;</span></span></a>
+      <a class="guide reveal d1" href="assets/guides/buyer-faq.pdf" target="_blank" rel="noopener"><span class="tagline">For Buyers</span><h3>Buyer FAQ</h3><p>Inspections, time-reference dates, title companies, and the lender relationship.</p><span class="dl">Download PDF <span class="arr">&darr;</span></span></a>
+      <a class="guide reveal d2" href="assets/guides/buyer-out-of-pocket-costs.pdf" target="_blank" rel="noopener"><span class="tagline">For Buyers</span><h3>Typical Out-of-Pocket Costs</h3><p>Earnest money, inspections, and appraisal &mdash; what to budget and when.</p><span class="dl">Download PDF <span class="arr">&darr;</span></span></a>
+      <a class="guide reveal" href="assets/guides/step-by-step-buying.pdf" target="_blank" rel="noopener"><span class="tagline">For Buyers</span><h3>Step-by-Step Buying</h3><p>The full journey from first consultation to keys in hand.</p><span class="dl">Download PDF <span class="arr">&darr;</span></span></a>
+      <a class="guide reveal d1" href="assets/guides/step-by-step-selling.pdf" target="_blank" rel="noopener"><span class="tagline">For Sellers</span><h3>Step-by-Step Selling</h3><p>All 15 stages from our first meeting to receiving your proceeds.</p><span class="dl">Download PDF <span class="arr">&darr;</span></span></a>
+      <a class="guide reveal d2" href="assets/guides/buying-timeline.pdf" target="_blank" rel="noopener"><span class="tagline">Timelines</span><h3>Buying &amp; Selling Timelines</h3><p>A visual look at how I guide you home, from sign to sold.</p><span class="dl">Download PDF <span class="arr">&darr;</span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="bg"><img id="contactImg" data-parallax="0.1" src="assets/img/alexis-standing-1800.jpg" alt="" aria-hidden="true" /></div>
+  <div class="wrap inner">
+    <div>
+      <span class="kicker reveal">let&rsquo;s find your space</span>
+      <h2 class="h-xl reveal d1">Ready for your next chapter?</h2>
+      <p class="lead reveal d2">Whether you&rsquo;re buying, selling, or just thinking it through, I&rsquo;d love to help. Reach out and let&rsquo;s talk about what&rsquo;s next.</p>
+      <div class="cinfo reveal d3">
+        <span class="lbl">Call or Text</span><a href="tel:+19188599603">(918) 859-9603</a>
+        <span class="lbl" style="margin-top:14px">Email</span><a href="mailto:aoakes@cbtulsa.com">aoakes@cbtulsa.com</a>
+        <span class="lbl" style="margin-top:14px">Brokerage</span><div>Coldwell Banker Select &middot; South Tulsa</div>
+      </div>
+    </div>
+    <form class="ccard reveal d2" id="contactForm">
+      <h3>Send a Message</h3>
+      <div class="field"><label for="cn">Name</label><input id="cn" type="text" required placeholder="Your name" /></div>
+      <div class="field"><label for="ce">Email</label><input id="ce" type="email" required placeholder="you@email.com" /></div>
+      <div class="field"><label for="cm">How can I help?</label><textarea id="cm" rows="3" placeholder="Buying, selling, or just exploring..."></textarea></div>
+      <input class="hp" type="text" id="company" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <button class="btn" type="submit" id="cbtn" data-mag><span class="dia"></span>Send Message</button>
+      <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-brand">
+        <img class="aolog" src="assets/logos/ao-stacked-white.svg" alt="Alexis Oakes, REALTOR" />
+        <p>REALTOR&reg; with Coldwell Banker&reg; Select, proudly serving Tulsa and all surrounding communities.</p>
+        <div class="f-social">
+          <a href="https://www.instagram.com/alexismoakes.realtor/" target="_blank" rel="noopener" aria-label="Alexis Oakes on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/alexismoakes.realtor/" target="_blank" rel="noopener" aria-label="Alexis Oakes on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5h2.2V5.4C15.8 5.3 14.9 5.2 13.9 5.2c-2.2 0-3.7 1.3-3.7 3.8v1.9H7.6v3.1h2.6V22h3.2v-8H16l.5-3.1h-3.1V9.3c0-.6.3-.8 1-.8z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="f-col"><h4>Explore</h4><a href="#listings">Current Listings</a><a href="#about">About Alexis</a><a href="#testimonials">Reviews</a><a href="#process">The Process</a><a href="#guides">Guides &amp; Checklists</a></div>
+      <div class="f-col"><h4>Connect</h4><a href="tel:+19188599603">(918) 859-9603</a><a href="mailto:aoakes@cbtulsa.com">aoakes@cbtulsa.com</a><a href="https://www.instagram.com/alexismoakes.realtor/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/alexismoakes.realtor/" target="_blank" rel="noopener">Facebook</a><span>8909 S Yale Ave, Tulsa, OK 74137</span></div>
+    </div>
+    <div class="f-bottom">
+      <img class="cblogo" src="assets/logos/cb-select-white.svg" alt="Coldwell Banker Select" />
+      <div class="legal">
+        Owned by a subsidiary of Anywhere Advisors LLC. &copy;2025 Coldwell Banker. All Rights Reserved. Coldwell Banker and the Coldwell Banker logos are trademarks of Coldwell Banker Real Estate LLC. Each office is independently owned and operated.
+        <span class="eho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h14v-9"/><path d="M9 19v-5h6v5"/></svg>Equal Housing Opportunity</span>
+      </div>
+      <a class="kraft" href="https://klinekraft.com" target="_blank" rel="noopener"><span class="dia"></span>Crafted by KLINEKRAFT</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ===== LOADER (fast + iOS + sessionStorage skip) ===== */
+(function(){
+  var seen=false; try{seen=sessionStorage.getItem('ao_seen')==='1';}catch(e){}
+  function done(){document.body.classList.add('loaded');document.body.classList.remove('lock');try{sessionStorage.setItem('ao_seen','1');}catch(e){}}
+  if(seen){document.body.classList.add('skip-loader','loaded');document.body.classList.remove('lock');}
+  else{
+    window.addEventListener('load',function(){setTimeout(done,1350);});
+    setTimeout(done,2600); // safety
+    ['touchstart','wheel','keydown'].forEach(function(ev){window.addEventListener(ev,function h(){done();},{once:true,passive:true});});
+  }
+})();
+
+/* ===== NAV: solid + hide/show ===== */
+var header=document.getElementById('header'),lastY=0;
+function nav(){
+  var y=window.scrollY;
+  header.classList.toggle('solid',y>60);
+  if(y>240 && y>lastY+4){header.classList.add('hide');}
+  else if(y<lastY-4){header.classList.remove('hide');}
+  lastY=y;
+}
+nav();window.addEventListener('scroll',nav,{passive:true});
+
+/* progress bar */
+var prog=document.getElementById('progress');
+function progress(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);prog.style.transform='scaleX('+Math.min(1,Math.max(0,p))+')';}
+progress();window.addEventListener('scroll',progress,{passive:true});
+
+/* mobile menu */
+var burger=document.getElementById('burger');
+function closeMenu(){document.body.classList.remove('menu-open');burger.setAttribute('aria-expanded','false');}
+burger.addEventListener('click',function(){var o=document.body.classList.toggle('menu-open');burger.setAttribute('aria-expanded',o?'true':'false');});
+document.querySelectorAll('#mobilemenu a').forEach(function(a){a.addEventListener('click',closeMenu);});
+
+/* reveal */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.reveal,.lineMask,.imgwipe').forEach(function(el){io.observe(el);});
+
+/* count-up */
+var cio=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(!e.isIntersecting)return;var el=e.target,t=parseFloat(el.dataset.count),pre=el.dataset.prefix||'',suf=el.dataset.suffix||'',t0=performance.now();
+  function tick(n){var p=Math.min((n-t0)/1400,1);p=1-Math.pow(1-p,3);el.textContent=pre+Math.round(t*p)+suf;if(p<1)requestAnimationFrame(tick);else el.textContent=pre+t+suf;}
+  requestAnimationFrame(tick);cio.unobserve(el);
+});},{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el);});
+
+/* parallax */
+var px=[].slice.call(document.querySelectorAll('[data-parallax]')),tick=false;
+function parallax(){px.forEach(function(el){var s=parseFloat(el.dataset.parallax)||.1;var r=el.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;var off=(innerHeight-r.top)*s-40;el.style.transform='translateY('+(-off).toFixed(1)+'px)';});tick=false;}
+window.addEventListener('scroll',function(){if(!tick){requestAnimationFrame(parallax);tick=true;}},{passive:true});parallax();
+
+/* magnetic buttons (pointer only) */
+if(matchMedia('(pointer:fine)').matches){
+  document.querySelectorAll('[data-mag]').forEach(function(el){
+    el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect();el.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18)+'px,'+((e.clientY-r.top-r.height/2)*.28)+'px)';});
+    el.addEventListener('pointerleave',function(){el.style.transform='';});
+  });
+}
+
+/* process tabs */
+document.querySelectorAll('.proc-tabs button').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var t=btn.dataset.track;
+    document.querySelectorAll('.proc-tabs button').forEach(function(b){b.classList.toggle('active',b===btn);});
+    document.querySelectorAll('.proc-track').forEach(function(tr){var on=tr.dataset.track===t;tr.classList.toggle('active',on);if(on)tr.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});});
+  });
+});
+
+/* contact form -> AJAX submit (no mail app opens)
+   Get a free access key at https://web3forms.com (sign up with aoakes@cbtulsa.com),
+   then paste it below. Submissions are emailed to that address. */
+var WEB3FORMS_KEY="REPLACE_WITH_YOUR_WEB3FORMS_ACCESS_KEY";
+var fmsg=document.getElementById('formMsg'),cbtn=document.getElementById('cbtn');
+function showMsg(html,ok){fmsg.innerHTML=html;fmsg.className='form-msg show'+(ok?' ok':'');}
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  if(document.getElementById('company').value){return;} // honeypot
+  var n=cn.value.trim(),em=ce.value.trim(),m=cm.value.trim();
+  if(!n||!em){showMsg('Please add your name and email.',false);return;}
+  cbtn.disabled=true;cbtn.innerHTML='Sending\u2026';
+  fetch('https://api.web3forms.com/submit',{
+    method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+    body:JSON.stringify({access_key:WEB3FORMS_KEY,subject:'New website inquiry from '+n,from_name:'Alexis Oakes Website',name:n,email:em,message:m||'(no message)'})
+  }).then(function(r){return r.json();}).then(function(d){
+    if(d&&d.success){
+      document.getElementById('contactForm').reset();
+      showMsg('Thank you, '+esc(n.split(' ')[0])+'! Your message is on its way &mdash; Alexis will be in touch soon.',true);
+    }else{throw new Error('failed');}
+  }).catch(function(){
+    showMsg('Sorry, something went wrong. Please call or text <a href="tel:+19188599603">(918) 859-9603</a> or email <a href="mailto:aoakes@cbtulsa.com">aoakes@cbtulsa.com</a>.',false);
+  }).then(function(){cbtn.disabled=false;cbtn.innerHTML='<span class="dia"></span>Send Message';});
+});
+
+/* ===== LISTINGS ===== */
+var grid=document.getElementById('listgrid'),note=document.getElementById('listNote'),MONO='assets/logos/ao-monogram-white.svg';
+var INITIAL=[
+ {address:"8819 S 74th East Avenue",city:"Tulsa",state:"OK",zip:"74133",price:319000,beds:4,baths:3,sqft:2021,status:"Active",url:"https://www.cbtulsa.com/for-sale/8819-s-74th-east-avenue-tulsa-ok-74133/id_1472878",photos:["https://sj-feeds.cdn.backatyou.com/mls_tulsa/images/2619346/8819-s-74th-east-avenue-000.jpeg?dt=20260528102855"]},
+ {address:"1401 S Rockford Avenue",city:"Tulsa",state:"OK",zip:"74120",price:449000,beds:2,baths:3,sqft:1994,status:"Pending",url:"https://www.cbtulsa.com/for-sale/1401-s-rockford-avenue-tulsa-ok-74120/id_1466896",photos:["https://sj-feeds.cdn.backatyou.com/mls_tulsa/images/2616210/1401-s-rockford-avenue-000.jpeg?dt=20260508193527"]},
+ {address:"1475 S 271st West Avenue",city:"Sand Springs",state:"OK",zip:"74063",price:420000,beds:4,baths:2,sqft:2289,status:"Pending",url:"https://www.cbtulsa.com/for-sale/1475-s-271st-west-avenue-sand-springs-ok-74063/id_1469005",photos:["https://sj-feeds.cdn.backatyou.com/mls_tulsa/images/2615523/1475-s-271st-west-avenue-000.jpeg?dt=20260514174206"]},
+ {address:"8431 S Sandusky Avenue",city:"Tulsa",state:"OK",zip:"74137",price:359000,beds:4,baths:2,sqft:2374,status:"Pending",url:"https://www.cbtulsa.com/for-sale/8431-s-sandusky-avenue-tulsa-ok-74137/id_1470847",photos:["https://sj-feeds.cdn.backatyou.com/mls_tulsa/images/2618237/8431-s-sandusky-avenue-000.jpeg?dt=20260520135146"]}
+];
+var SRANK={'Active':0,'Coming Soon':1,'Under Contract':2,'Pending':3};
+function statusClass(s){var k=(s||'Active').toLowerCase();if(k.indexOf('pending')>-1)return'pending';if(k.indexOf('contract')>-1)return'contract';if(k.indexOf('coming')>-1)return'soon';return'active';}
+function esc(s){return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function fmt(p){return p?('$'+Number(p).toLocaleString('en-US')):'Inquire';}
+function card(l){
+  var photo=(l.photos&&l.photos.length)?l.photos[0]:'';
+  var img=photo?'<img class="cover" loading="lazy" src="'+esc(photo)+'" alt="'+esc(l.address)+'" onerror="this.classList.add(\'failed\')">':'';
+  var specs='';
+  if(l.beds)specs+='<span><b>'+l.beds+'</b>Beds</span>';
+  if(l.baths)specs+='<span><b>'+l.baths+'</b>Baths</span>';
+  if(l.sqft)specs+='<span><b>'+Number(l.sqft).toLocaleString()+'</b>Sq Ft</span>';
+  var loc=[l.city,l.state].filter(Boolean).join(', ')+(l.zip?(' '+l.zip):'');
+  return '<article class="card reveal"><div class="ph"><div class="ph-fallback"><img src="'+MONO+'" alt=""></div>'+img+
+    '<span class="status '+statusClass(l.status)+'">'+esc(l.status||'Active')+'</span><span class="price">'+fmt(l.price)+'</span></div>'+
+    '<div class="body"><div class="addr">'+(esc(l.address)||'Address on request')+'</div><div class="city">'+esc(loc)+'</div>'+
+    (specs?'<div class="specs">'+specs+'</div>':'')+
+    '<div class="go"><a href="'+(esc(l.url)||'#contact')+'" target="_blank" rel="noopener">View Details <span class="arr">&rarr;</span></a></div></div></article>';
+}
+function render(list){
+  if(!list||!list.length){grid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:40px 0;color:var(--on-dark-mute)">New listings are added often &mdash; <a href="#contact" style="color:var(--tan)">reach out</a> for what&rsquo;s coming soon.</div>';return;}
+  grid.innerHTML=list.map(card).join('');
+  grid.querySelectorAll('.reveal').forEach(function(el,i){setTimeout(function(){el.classList.add('in');},50*i);});
+}
+render(INITIAL); // real listings + photos immediately
+note.textContent='Showing '+INITIAL.length+' current listings';
+fetch('/api/listings',{headers:{accept:'application/json'}}).then(function(r){return r.ok?r.json():null;}).then(function(d){
+  if(d&&d.listings&&d.listings.length){render(d.listings);note.textContent='Showing '+d.listings.length+' current listing'+(d.listings.length>1?'s':'')+(d.source==='feed'?' \u00B7 live from the MLS':'');}
+}).catch(function(){});
+</script>
+</body>
+</html>
